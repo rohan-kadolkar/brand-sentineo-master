@@ -1,10 +1,8 @@
 import os
 import json
 import pathlib
-import requests
-import praw
+import requests ,praw ,functools
 import pandas as pd
-import functools
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from flask import Flask, abort, request, render_template, url_for, session, redirect, flash
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
